@@ -15,6 +15,6 @@ def create_student(request):
     else:
         user_form = UserForm()
         student_form = StudentForm()
-    return render(request, 'create_student.html', {'user_form': user_form, 'student_form': student_form})
+    return render(request, 'engagement/add-student.html', {'user_form': user_form, 'student_form': student_form})
 
 # Similarly for other roles like create_teacher, create_admin, etc.
