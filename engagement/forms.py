@@ -10,7 +10,7 @@ class UserForm(forms.ModelForm):
 class StudentForm(forms.ModelForm):
     class Meta:
         model = Student
-        fields = ['is_international', 'risk_status', 'engagement_status']
+        fields = ['is_international']
 
 # Likewise for other roles
 class TeacherForm(forms.ModelForm):

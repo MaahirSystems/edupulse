@@ -24,9 +24,9 @@ class LabAssistantAdmin(admin.ModelAdmin):
 class StudentAdmin(ReverseModelAdmin):
 
 
-    list_display = ['user', 'is_international', 'risk_status']
-    search_fields = ['user__username', 'risk_status']
-    list_filter = ['is_international', 'risk_status']
+    list_display = ['user', 'is_international',]
+    search_fields = ['user__username', ]
+    list_filter = ['is_international', ]
 
     inline_type = 'stacked'
     inline_reverse = [('user', {'fields': ['username', 'email', 'first_name', 'last_name']})]
